@@ -488,7 +488,11 @@ textarea {
     transform: translateY(0);
 }
 
-.link-title {
+.footer-social {
+    margin-right: 80px;
+}
+
+.footer-title {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -542,61 +546,70 @@ textarea {
     box-sizing: border-box;
 }
 
-.subscribe {
+.footer-socials-icon {
+    fill: currentColor;
+}
+
+.footer-subscribe-form {
     display: flex;
-    align-items: flex-end;
-    margin-left: 80px;
+    gap: 24px;
 }
 
-.subscribe-label {
+.footer-subscribe-lable {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    color: rgb(var(--cl-white));
+}
+
+.footer-subscribe-input {
     display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-right: 24px;
-    color: #FFF;
-}
-
-.subscribe-input {
-    width: 264px;
-    height: 40px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    border: 1px solid var(--WHITE, #FFF);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    background: none;
-}
-
-.subscribe-input::placeholder {
-    color: var(--WHITE, #FFF);
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    /* 200% */
-    letter-spacing: 0.48px;
-    padding-left: 16px;
-}
-
-.subscribe-btn {
-    width: 165px;
-    height: 40px;
-    display: flex;
-    padding: 8px 24px;
     justify-content: center;
     align-items: center;
-    gap: 16px;
-    border: 0;
+
+    width: 264px;
+    height: 40px;
+    padding: 8px 16px;
+
     border-radius: 4px;
-    background-color: var(--IRIS, #4D5AE5);
-    color: #FFF;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgb(var(--cl-white));
+    box-shadow: 0px 4px 4px 0px rgba(var(--cl-black), 0.15);
+
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+
+    color: rgb(var(--cl-white));
+    background-color: transparent;
 }
 
-.subscribe-btn:hover,
-.subscribe-btn:focus {
-    background: var(--OCEAN, #404BBF);
+.footer-subscribe-input::placeholder {
+    color: rgb(var(--cl-white));
+}
+
+.footer-subscribe-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 165px;
+    height: 40px;
+    padding: 8px 0;
+
+    text-align: center;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.footer-subscribe-icon {
+    margin-left: 16px;
+
+    fill: currentColor;
 }
 
 .modal-overlay {
@@ -653,6 +666,7 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
 
     width: 24px;
     height: 24px;
@@ -665,6 +679,7 @@ textarea {
 
     transition: background-color var(--transition-hover-focus),
         border var(--transition-hover-focus);
+    cursor: pointer;
 }
 
 .modal-close-btn:hover,
